@@ -1,0 +1,23 @@
+{
+    "workbench.colorTheme": "dimmed-theme",
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 2,
+    "workbench.preferredDarkColorTheme": "dimmed-theme",
+    "workbench.preferredHighContrastColorTheme": "dimmed-theme",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "workbench.colorCustomizations": {
+        "terminal.background": "#101d21",
+        "terminal.foreground": "#5b5959",
+        "terminal.ansiBrightBlue": "#091831",
+        "terminal.ansiBlack": "#1D2021",
+        "terminal.ansiWhite": "#535340",
+        "editorSuggestWidget.foreground": "#5b5959",
+        "editorSuggestWidget.selectedForeground": "#715b2f",
+        "button.background": "#793305",
+        "button.foreground": "#797979",
+        "button.hoverBackground": "#2e3e43",
+        "tab.activeForeground": "#1d1d1d",
+        "tab.activeBackground": "#30354f"
+    }
+}
