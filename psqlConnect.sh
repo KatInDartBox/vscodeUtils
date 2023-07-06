@@ -37,7 +37,9 @@ restart)
   start
   ;;
 *)
-  echo "Usage: $0 {start|stop|restart}"
+  start
+  echo "postgres started"
+  echo "available command stop|restart"
   exit 1
   ;;
 esac
