@@ -28,6 +28,7 @@ stop() {
 case "$1" in
 start)
   start
+  echo "started psql"
   ;;
 stop)
   stop
@@ -37,14 +38,14 @@ restart)
   start
   ;;
 *)
-  start
-  echo "postgres started"
-  echo "available command stop|restart"
-  exit 1
+  # start
+  # echo "postgres started"
+  # echo "available command stop|restart"
+  # exit 1
   ;;
 esac
 
-exit 0
+exit 1
 
 # [1]
 # sudo mkdir -p /usr/local/pgsql/data
