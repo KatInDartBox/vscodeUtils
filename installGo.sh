@@ -3,8 +3,10 @@
 # env
 profilePath="/home/postgres/.zshrc"
 downloadPath="/home/postgres/Downloads"
-downloadUrl="https://go.dev/dl/go1.20.5.linux-amd64.tar.gz"
-downloadName="go1.20.5.gz"
+goName="go1.22.0" #change me
+
+downloadUrl="https://go.dev/dl/${goName}.linux-amd64.tar.gz"
+downloadName="${goName}.gz"
 writeGoEnv="no" #yes/no
 
 # download go

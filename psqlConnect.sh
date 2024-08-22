@@ -7,9 +7,14 @@
 
 PGVER='14'
 BINPATH="/usr/lib/postgresql/$PGVER/bin/"
-# PGUSER='postgres'
-PGLOG='/tmp/pgsql.log'
+
 # make sure this folder exist and postgres have read/write permission
+# sudo chown -R username:group directory
+# sudo chown -R ubuntu:ubuntu pgsql
+
+# PGUSER='postgres'
+PGLOG='/tmp/pgsql/pgsql.log'
+
 # see [1]
 PGDIR='/usr/local/pgsql/data'
 
