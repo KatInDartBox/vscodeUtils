@@ -7,18 +7,28 @@
 
 PGVER='14'
 BINPATH="/usr/lib/postgresql/$PGVER/bin/"
+LINUSER="ubuntu"
+LINGROUP="ubuntu"
 
-# make sure this folder exist and postgres have read/write permission
+
+# logfile - everyone can access
+PGLOG='/tmp/pgsql.log'
+
+# make sure this folder exist and postgres(pg_ctl) have read/write permission
 # sudo chown -R username:group directory
 # sudo chown -R ubuntu:ubuntu pgsql
 
-# PGUSER='postgres'
-PGLOG='/tmp/pgsql/pgsql.log'
-
-# see [1]
+# psql data
 PGDIR='/usr/local/pgsql/data'
 
+# run log 
+PGRUN='/var/run/postgresql/'
+
+
 start() {
+  #user=ubuntu, group=ubuntu
+  #passwd is required
+  sudo chown -R $LINUSER:$LINGROUP $PGRUN
   cd $BINPATH
   ./pg_ctl -D $PGDIR -l $PGLOG start
   #su $PGUSER -c "./pg_ctl -D $PGDIR -l $PGLOG start" #run from user diff postgres
